@@ -30,11 +30,11 @@ Boas práticas em modelagem de banco de dados
 Utilizar nomes descritivos e consistentes para tabelas, colunas e restrições, facilitando a compreensão e manutenção do banco de dados ao longo do tempo.
 Procure sempre utilizar, sempre que possível, apenas uma chave primária. Quando houver uma relação muitos para muitos (n para n), crie uma chave primária específica para aquela tabela.]
 
-PESQUISAS SQL
+# PESQUISAS SQL
 
-# 1) SELECT * from cliente
-# 2) SELECT * FROM veiculo, cliente WHERE placa LIKE '%3'
-# 3) SELECT * FROM cliente WHERE uf_cnh = 'RS' AND telefone IS NULL
-# 5) SELECT COUNT(*) AS total_veiculos FROM veiculo
-# 6) SELECT v.* FROM veiculo v JOIN contrato_aluguel ca ON v.id_veiculo = ca.id_veiculo JOIN cliente c ON ca.id_cliente = c.id_cliente WHERE c.nome = 'Alexandre Zamberlan'
-# 7) SELECT c.nome AS nome_cliente, e.nome AS nome_escritorio FROM contrato_aluguel ca JOIN cliente c ON ca.id_cliente = c.id_cliente JOIN escritorio e ON ca.id_escritorio = e.id_escritorio
+1) SELECT * from cliente
+2) SELECT * FROM veiculo, cliente WHERE placa LIKE '%3'
+3) SELECT * FROM cliente WHERE uf_cnh = 'RS' AND telefone IS NULL
+5) SELECT COUNT(*) AS total_veiculos FROM veiculo
+6) SELECT v.* FROM veiculo v JOIN contrato_aluguel ca ON v.id_veiculo = ca.id_veiculo JOIN cliente c ON ca.id_cliente = c.id_cliente WHERE c.nome = 'Alexandre Zamberlan'
+7) SELECT c.nome AS nome_cliente, e.nome AS nome_escritorio FROM contrato_aluguel ca JOIN cliente c ON ca.id_cliente = c.id_cliente JOIN escritorio e ON ca.id_escritorio = e.id_escritorio
